@@ -11,11 +11,11 @@ You can try call REST api via swagger documentation
 
 
 # Api Content
-getHotel REST API
-Swagger api documentation
-integration test case
-controller test case
-api gateway for call mulit use case independent on other usecase
-service part for call use case and check business validation before access use case and model
-use case implementation
-repository work as database for get data (mock data)
+getHotel REST API, 
+Swagger api documentation, 
+integration test case, 
+controller test case, 
+api gateway for call mulit use case independent on other usecase, 
+service part for call use case and check business validation before access use case and model, 
+use case implementation, 
+repository work as database for get data (mock data), 

@@ -28,6 +28,19 @@ public class HotelRepositoryImp implements HotelRepository {
         );
 
         collection.add(new Hotel.Builder()
+                .fromDate("2019-01-01")
+                .toDate("2019-12-31")
+                .city("AUH")
+                .numberOfAdults(10)
+                .hotelName("Royal Hotel")
+                .farePerNight(new BigDecimal(180.00))
+                .amenities("Wifi,parking,TV,Smoking Room")
+                .rate(4.5f)
+                .discount(0)
+                .build()
+        );
+
+        collection.add(new Hotel.Builder()
                 .fromDate("2019-05-01")
                 .toDate("2019-12-31")
                 .city("AUH")
@@ -41,7 +54,7 @@ public class HotelRepositoryImp implements HotelRepository {
         );
 
         collection.add(new Hotel.Builder()
-                .fromDate("2019-05-01")
+                .fromDate("2019-01-01")
                 .toDate("2019-12-31")
                 .city("DXB")
                 .numberOfAdults(10)
@@ -52,6 +65,33 @@ public class HotelRepositoryImp implements HotelRepository {
                 .discount(0)
                 .build()
         );
+
+        collection.add(new Hotel.Builder()
+                .fromDate("2019-01-01")
+                .toDate("2019-12-31")
+                .city("DXB")
+                .numberOfAdults(10)
+                .hotelName("Jumeirah Beach Hotel")
+                .farePerNight(new BigDecimal(350.00))
+                .amenities("Wifi,parking")
+                .rate(4.9f)
+                .discount(0)
+                .build()
+        );
+
+        collection.add(new Hotel.Builder()
+                .fromDate("2019-03-01")
+                .toDate("2019-12-31")
+                .city("DXB")
+                .numberOfAdults(10)
+                .hotelName("Sheraton Grand Hotel")
+                .farePerNight(new BigDecimal(250.00))
+                .amenities("Wifi,parking")
+                .rate(4.1f)
+                .discount(0)
+                .build()
+        );
+
     }
 
     public Collection<Hotel> getHotels(BestHotelRequest request) {
